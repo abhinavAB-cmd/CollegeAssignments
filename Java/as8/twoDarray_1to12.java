@@ -1,0 +1,20 @@
+public class twoDarray_1to12 {
+    public static void main(String[] args) {
+        int[][] array = new int[3][4];
+        int value = 1;
+
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                array[i][j] = value++;
+            }
+        }
+
+        // Print the 2D array
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                System.out.print(array[i][j] + "\t");
+            }
+            System.out.println();
+        }
+    }
+}
